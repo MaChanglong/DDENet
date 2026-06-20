@@ -123,10 +123,8 @@ class MSG(nn.Module):
         g = self.gate(x)
         v = self.v(x)
         xg = self.act_gate(g) * v
-
         xl = self.g(x.mean(dim=(2, 3), keepdim=True))
         xl = xl * v
         out = self.se(xg + xl)
-        # out = self.se(x)
         x_out = self.out(out)
         return x_out
