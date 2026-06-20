@@ -7,11 +7,12 @@ https://pan.baidu.com/s/1by24xKiueewxl0XVb0pfEw 提取码: hadh
 If you find this work helpful, please cite:
 
 ```bibtex
-@article{li2026PLATO,
-  title={PLATO: Probabilistic Hierarchical Multi-head Model for Plug-and-play Ambiguous Medical Image Segmentation},
-  author={Li, Xiangyu and Li, Fanding and Yuan, Yongfeng and Dong, Suyu and Wang, Kuanquan and Shen, Yi},
-  journal={Knowledge-based Systems},
-  pages={115746},
-  year={2026}
+@article{ma2026dual,
+  title={A dual-domain enhanced network with multi-scale structure guide for breast lesion segmentation in ultrasound images},
+  author={Ma, Changlong and Li, Haiyan and Liu, Yajie and Shi, Xin and He, Bingbing and Liu, Xiang},
+  journal={Expert Systems with Applications},
+  pages={132176},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
