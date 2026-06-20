@@ -5,6 +5,7 @@ Breast cancer is one of the most common types of cancer affecting women worldwid
 https://pan.baidu.com/s/1by24xKiueewxl0XVb0pfEw 提取码: hadh
 ## Citations
 If you find this work helpful, please cite:
+
 @article{ma2026dual,
   title={A dual-domain enhanced network with multi-scale structure guide for breast lesion segmentation in ultrasound images},
   author={Ma, Changlong and Li, Haiyan and Liu, Yajie and Shi, Xin and He, Bingbing and Liu, Xiang},
