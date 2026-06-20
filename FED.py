@@ -79,21 +79,11 @@ class FED(nn.Module):
         self.deform1 = DCN(in_depth*2, in_depth, kernel_size=3, stride=1, padding=1)
 
     def forward(self, x_loc,x_glo):
-        # mid = x.shape[1] // 2
-        # x_loc = x[:, :mid, :, :]
-        # x_glo = x[:, mid:, :, :]
-        # x_ll = self.conv_ll(x_loc)
-        # print("x_loc size:", x_loc.shape)
         x_ll = self.deform(x_loc)
-
         x_ll = self.se(x_ll) * x_ll
-
         x_lg = self.conv_lg(x_loc)
         x_gl = self.conv_gl(x_glo)
         x_gg = self.conv_gg(x_glo)
-        # x_gg = x_gl
-        # print("x_ll size:",x_ll.shape)
-        # print("x_gl size:", x_gl.shape)
         out_loc = torch.add((self.bnaf1(x_ll + x_gl)), x_loc)
         out_glo = torch.add((self.bnaf2(x_gg + x_lg)), x_glo)
         out = torch.cat((out_loc, out_glo), dim=1)
