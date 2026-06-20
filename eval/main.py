@@ -145,6 +145,6 @@ if __name__ == '__main__':
         print(f"Recall: {recall.avg:.4f}")
         print(f"Precision: {precision.avg:.4f}")
         print("-" * 30)
-        print(f"HD95 (pixels): {hd95_meter.avg:.4f}")  # 越小越好
-        print(f"Boundary F-score: {boundary_f1_meter.avg:.4f}")  # 越高越好
+        print(f"HD95 (pixels): {hd95_meter.avg:.4f}")  
+        print(f"Boundary F-score: {boundary_f1_meter.avg:.4f}")  
         print("-" * 30)
