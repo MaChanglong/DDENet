@@ -16,7 +16,7 @@ import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=256, help='testing size')
-parser.add_argument('--test_path', type=str, default='./TrainDataset/BUSI')  # 测试集的位置
+parser.add_argument('--test_path', type=str, default='./TrainDataset/BUSI') 
 
 
 # for _data_name in ['test', 'STU', 'CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
